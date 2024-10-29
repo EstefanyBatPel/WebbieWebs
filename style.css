@@ -166,7 +166,6 @@ h1{
 
 .service_content{
     display: none;
-    transition: 0.5s;  
 }
 
 .card:hover .service_content{
@@ -191,7 +190,69 @@ h1{
 
 .team, .works{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profiles{
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    padding: 100px 0 0 0;
+}
+
+.profile_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     place-content: center;
+    text-align: center;
+    background-color: #22aed1;
+    color: #fff;
+    width: 420px;
+    padding: 35px;
+    border-radius: 30px;
+    height: 520px;
+}
+
+h2{
+    font-size: 33px;
+}
+
+.juliet{
+    background-image: url(img/Juliet.jpg);
+}
+
+.eugenia{
+    background-image: url(img/Eugenia.jpg);
+}
+
+.emilia{
+    background-image: url(img/Emilia.jpg);
+}
+
+.sara{
+    background-image: url(img/Sara.jpg);
+}
+
+.profile_photo{
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.profile_description{
+    font-size: 22px;
+}
+
+.name{
+    color: #fff;
+}
+
+.profile_card p{
+    margin-bottom: 30px;
 }
 
 footer{
