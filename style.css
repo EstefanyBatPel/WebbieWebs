@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+
+html, body{
+    height: 100%;
+
+}
+
+.logo img{
+    height: 120px;
+    width: auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 40px 0 35px;
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #505050;
+    font-size: 30px;
+}
+
+.menu_icon{
+    display: none;
+}
+
+.menu_icon i{
+    color: #22aed1;
+    font-size: 60px;
+}
+
+.hero{
+    background-image: url(/img/Fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 1100px;
+    display: grid;
+    place-content: center;
+}
+
+.hero_content{
+    width: 70vw;
+    background-color: rgb(34, 174, 209, 75%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    padding: 7vw 150px;
+}
+
+.hero_content p{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero_content button{
+    font-size: 2em;
+    width: 350px;
+    height: 90px;
+    border-radius: 70px;
+    border: none;
+    color: #505050e3;
+    margin-top: 70px;
+    letter-spacing: 1.5px;
+}
+
+.hero_description{
+    text-align: center;
+    font-size: 2em;
+    color: #505050;
+    padding: 150px;
+}
+
+/* Movil */
+@media (max-width: 600px){
+
+}
+
+/* PC */
+
+@media (min-width: 600px){
+
+}
