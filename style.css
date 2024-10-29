@@ -84,11 +84,58 @@ nav ul li a{
     letter-spacing: 1.5px;
 }
 
-.hero_description{
+.section_description{
     text-align: center;
     font-size: 2em;
     color: #505050;
     padding: 150px;
+}
+
+.services{
+    display: grid;
+    place-content: center;
+}
+
+.title_container{
+    display: grid;
+    place-content: center;
+}
+
+.title{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+h1{
+    color: #22aed1;
+    margin: 0 40px 0 0;
+    font-size: 35px;
+}
+
+.title hr{
+    flex-grow: 1;
+
+}
+
+.services hr{
+    height: 3px;
+    background-color: #22aed1;
+    border: none;
+}
+
+.close{
+    width: 80vw;
+}
+
+.team, .works{
+    display: flex;
+    place-content: center;
+}
+
+footer{
+    background-color: #22aed1;
 }
 
 /* Movil */
