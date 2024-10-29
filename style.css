@@ -136,6 +136,39 @@ h1{
 
 footer{
     background-color: #22aed1;
+    padding: 30px;
+}
+
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 25px;
+    height: 200px;
+    padding: 30px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact{
+    text-align: right;
+}
+
+.contact p{
+    margin: 0 0 15px 0;
+}
+
+.footer_logo{
+    height: 8.5vw;
 }
 
 /* Movil */
