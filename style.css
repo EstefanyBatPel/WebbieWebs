@@ -197,7 +197,6 @@ h1{
 .profiles{
     display: flex;
     justify-content: space-around;
-    width: 90vw;
     padding: 100px 0 0 0;
 }
 
@@ -213,6 +212,7 @@ h1{
     padding: 35px;
     border-radius: 30px;
     height: 520px;
+    margin: 0 30px;
 }
 
 h2{
@@ -255,6 +255,36 @@ h2{
     margin-bottom: 30px;
 }
 
+.works_container{
+    background-color: #22aed1;
+    margin-top: 40px;
+    padding: 15px 0;
+}
+
+.work_container{
+    position: relative;
+    display: inline-block;
+}
+
+.work_container img{
+    display: block;
+    width: 32.8vw;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    background-color: #22aed1;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    transition: .5s;
+}
+
+.work_container:hover .overlay{
+    opacity: 0%;
+}
+
 footer{
     background-color: #22aed1;
     padding: 30px;
@@ -277,6 +307,7 @@ footer{
 
 .links a{
     text-decoration: none;
+    margin-bottom: 17px;
     color: #fff;
 }
 
