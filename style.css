@@ -36,6 +36,7 @@ nav ul li a{
     text-decoration: none;
     color: #505050;
     font-size: 30px;
+    transition: 0.3s;
 }
 
 nav ul li a:hover{
@@ -86,20 +87,23 @@ nav ul li a:hover{
     color: #505050e3;
     margin-top: 70px;
     letter-spacing: 1.5px;
-    transition: .3s;
+    transition: .6s;
 }
 
 .hero_content button:hover{
     cursor: pointer;
     box-shadow: #fff 0px 0px 20px;
     color: #22aed1;
+    transform: scale(1.03);
 }
 
 .section_description{
     text-align: center;
     font-size: 2em;
+    width: 75vw;
     color: #505050;
     padding: 150px;
+    margin: auto;
 }
 
 .services{
@@ -157,7 +161,7 @@ h1{
     width: 35vw;
     height: 115px;
     margin: 50px;
-    transition: .5s;
+    transition: .8s;
 }
 
 .card:hover{
@@ -211,8 +215,13 @@ h1{
     width: 420px;
     padding: 35px;
     border-radius: 30px;
-    height: 520px;
+    height: 570px;
     margin: 0 30px;
+    transition: .5s;
+}
+
+.profile_card:hover{
+    transform: scale(1.03);
 }
 
 h2{
@@ -283,9 +292,89 @@ h2{
 
 .work_container:hover .overlay{
     opacity: 0%;
+    cursor: pointer;
+}
+
+.clients_container{
+    padding: 50px;
+    border: #22aed1 2px solid;
+    border-radius: 30px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin: auto;
+}
+
+.clients_container img{
+    margin: 30px;
+}
+
+.button_container{
+    width: 350px;
+    height: 190px;
+    position: relative;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.button_container button{
+    width: inherit;
+    height: inherit;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.25);
+    background: rgba(255,255,255,.05);
+    backdrop-filter: blur(10px);
+    font-size: 33px;
+    color: #505050;
+    transition: 0.4s;
+}
+
+.button_container button:hover{
+    color: #22aed1;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(34, 174, 209, .5);
+}
+
+.button_container:hover{
+    transform: scale(1.04) rotate(1deg);
+}
+
+.circle{
+    width: 120px;
+    height: 120px;
+    background-color: #22aed1;
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 1.3s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1){
+    top: -40px;
+    left: -40px;
+}
+
+.circle:nth-child(2){
+    bottom: -40px;
+    right: -40px;
+    animation-name: move-down1;
+}
+
+@keyframes move-up6{
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes move-down1{
+    to {
+        transform: translateY(10px);
+    }
 }
 
 footer{
+    margin-top: 200px;
     background-color: #22aed1;
     padding: 30px;
 }
