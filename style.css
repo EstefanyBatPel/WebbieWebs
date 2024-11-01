@@ -45,6 +45,7 @@ nav ul li a:hover{
 
 .menu_icon{
     display: none;
+    cursor: pointer;
 }
 
 .menu_icon i{
@@ -268,16 +269,16 @@ h2{
     background-color: #22aed1;
     margin-top: 40px;
     padding: 15px 0;
+    display: flex;
 }
 
 .work_container{
     position: relative;
-    display: inline-block;
 }
 
 .work_container img{
     display: block;
-    width: 32.8vw;
+    width: 33vw;
 }
 
 .overlay{
@@ -412,13 +413,35 @@ footer{
     height: 8.5vw;
 }
 
-/* Movil */
-@media (max-width: 600px){
+@media (max-width: 1300px){
+    .hero_content{
+        height: 700px;
+    }
 
+    .hero_content p{
+        font-size: 25px;
+    }
+
+    .hero_content button{
+        font-size: 25px;
+        width: 250px;
+    }
 }
 
-/* PC */
+@media (max-width: 1000px){
 
-@media (min-width: 600px){
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #22aed1;
+    }
 
+    .menu.active{
+        display: flex;
+    }
+
+    .menu_icon{
+        display: block;
+    }
 }
